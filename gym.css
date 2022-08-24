@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;   
+    position: sticky;
+    top: 0px;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 50px;
+  margin: 1px;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;    
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 540px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url('img/body.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;    
+    top: 0px;
+    left: 0px; 
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#container{
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 40px;
+    width: 40%;
+    border-radius: 28px;
+}
+.h{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.form-group input{
+    font-family: 'Spline Sans Mono', monospace;
+    text-align: center;
+    display: block;
+    width: 400px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 13px auto;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+#container button{
+    font-family: 'Spline Sans Mono', monospace;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 50%;
+    height: 35px;
+    padding: 1px;
+    margin:2px auto;
+    border-radius: 23px;
+}
+
+.btn:hover{
+    color: white;
+    background-color: blue;
+}
